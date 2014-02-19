@@ -11,6 +11,7 @@ Example
 -----------
 lazy loading modules will be registerd base on a routing pattern.
 
+````
 angular.module('dialog', ['ngRoute', 'lazyLoading'])
 
 .config(function($routeProvider, lazyLoadingProvider) {
@@ -27,13 +28,13 @@ angular.module('dialog', ['ngRoute', 'lazyLoading'])
 	.otherwise({
 		redirectTo: '/home'
 	});
-	
 })
+````
 
 Module configuration
 -----------
 Modules will be made availible by a small json configuration file.
-
+````
 {
 	"module" : "../modules/lazyModule/app/module.js",
 	
@@ -46,4 +47,4 @@ Modules will be made availible by a small json configuration file.
 		"../modules/lazyModule/app/service/LazyService.js"
 	]
 }
-
+````
