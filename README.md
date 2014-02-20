@@ -50,3 +50,8 @@ Modules will be made availible by a small configuration file in the base directo
 	]
 }
 ````
+
+Contact
+-----------
+willem.veelenturf@gmail.com
+http://willemveelenturf.nl
