@@ -1,0 +1,1 @@
+{	"module" : "module.js",		"controller" : "LazyCtrl",	"templateUrl" : "views/lazy.html",			"files" : [		"config/RouteConfig.js", 		"controllers/LazyCtrl.js",		"services/LazyService.js"	]		}

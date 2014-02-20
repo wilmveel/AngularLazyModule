@@ -1,0 +1,25 @@
+.riaf-icon {
+	width: 12px;
+	height: 12px;
+	line-height: 12px;
+	display: inline-block;
+	background: url(../images/SOL_icon_sprite.png) no-repeat;
+}
+
+.riaf-icon-arrow-right {
+	background-position: 0 -40px;
+}
+
+.riaf-icon-arrow-down {
+	background-position: 0 -60px;
+}
+
+.riaf-linkbutton,.riaf-linkbutton:link,.riaf-linkbutton:visited {
+	background: url(../images/SOL_icon_sprite.png) 0 2px no-repeat;
+	padding: 0 0 0 12px;
+	color: #000;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+

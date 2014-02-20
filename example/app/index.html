@@ -1,0 +1,41 @@
+  <!doctype html>
+<html xmlns:ng="http://angularjs.org" id="ng-app" ng-app="dialog">
+
+	<head>
+
+		<title>Dialog</title>
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/riaf.css">
+		<link rel="stylesheet" href="css/ing.css">
+		<link rel="stylesheet" href="css/ing-lisa.css">
+
+	</head>
+
+	<body ng-cloak>
+	
+		<div class="container">
+	
+			<nav class="navbar navbar-default" role="navigation">
+				<a class="navbar-brand" href="#">Dialog</a>
+			</nav>
+			
+			<div ng-view></div>
+		
+		</div>
+		
+		<!-- Libraries -->
+		<script src="js/angular.js"></script>
+		<script src="js/angular-route.js"></script>
+		<!--script src="js/require.js"></script-->
+		<script src="js/script.js"></script>
+		
+		<!-- lazy Loader -->
+		<script src="../../src/lazyModuleLoader.js"></script>
+				
+		<!-- application -->
+		<script src="app/example.js"></script>
+
+	</body>
+
+<html>

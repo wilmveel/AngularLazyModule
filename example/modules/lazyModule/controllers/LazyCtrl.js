@@ -1,0 +1,1 @@
+console.log("LazyCtrl loaded...");angular.module('lazyModule').controller('LazyCtrl', function($scope, LazyService) {		console.log("load Lazy controller");		$scope.hello = "Hallo from LazyCtrl";		$scope.hi = function(){		return LazyService.hello;	}});

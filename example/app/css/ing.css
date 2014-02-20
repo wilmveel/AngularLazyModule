@@ -1,0 +1,67 @@
+/*  */
+
+/* Panel */
+.panel-ing {
+	border-color: #dddddd;
+}
+
+.panel-ing>.panel-heading {
+	color: #FFF;
+	background-color: #F60;
+	border-color: #dddddd;
+	font-weight: bold;
+
+	background-image: -webkit-gradient(linear, left 0%, left 100%, from(#F60), to(#e8e8e8));
+	background-image: -webkit-linear-gradient(top, #F60, 0%, #e65c00, 100%);
+	background-image: -moz-linear-gradient(top, #F60 0%, #e65c00 100%);
+	background-image: linear-gradient(to bottom, #F60 0%, #e65c00 100%);
+	background-repeat: repeat-x;
+	
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
+}
+
+/* Button */
+.btn-ing:hover,.btn-ing:focus,.btn-ing:active,.btn-ing.active {
+	background-color: #e65c00;
+	border-color: #cc5200;
+}
+
+.btn-ing.disabled:hover,.btn-ing.disabled:focus,.btn-ing.disabled:active,.btn-ing.disabled.active,.btn-ing[disabled]:hover,.btn-ing[disabled]:focus,.btn-ing[disabled]:active,.btn-ing[disabled].active,fieldset[disabled] .btn-ing:hover,fieldset[disabled] .btn-ing:focus,fieldset[disabled] .btn-ing:active,fieldset[disabled] .btn-ing.active
+	{
+	background-color: #F60;
+	border-color: #F60;
+}
+
+.btn-ing {
+	border-color: #e65c00;
+	font-weight: bold;
+	color: #FFF;
+
+	background-image: -webkit-gradient(linear, left 0%, left 100%, from(#F60), to(#e65c00));
+	background-image: -webkit-linear-gradient(top, #F60, 0%, #e65c00, 100%);
+	background-image: -moz-linear-gradient(top, #F60 0%, #e65c00 100%);
+	background-image: linear-gradient(to bottom, #F60 0%, #e65c00 100%);
+	background-repeat: repeat-x;
+	
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF6600', endColorstr='#e65c00', GradientType=0);
+}
+
+.btn-ing:active,.btn-ing.active {
+	background-color: #F60;
+	border-color: #e65c00;
+}
+
+/* Navbar */
+.navbar-ing {
+	background-image: url('../images/ing_header_one.png');
+	background-repeat: repeat-x;
+}
+
+.navbar-ing a {
+	color: #FFF;
+}
+
+.navbar-ing .nav>li>a:hover {
+	color: #999;
+	background: none;
+}

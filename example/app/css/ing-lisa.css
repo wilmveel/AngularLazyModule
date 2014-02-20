@@ -1,0 +1,55 @@
+body, td, th {
+	font-family: Arial;
+	font-size: 12pt;
+}
+
+
+/* Container */
+.container{
+	width:930px;
+	padding:15px;
+} 
+
+/* Panel */
+.panel-ing {
+	border-color: #ABA195;
+	border-radius: 0px;
+}
+
+.panel-ing>.panel-heading {
+	color: #000;
+	background: #ECECEC;
+	border-color: #ABA195;
+	font-weight: bold;
+}
+
+.panel-ing>.panel-body{
+	padding:10px;
+}
+
+.btn-ing {
+	font-size:16px;
+	color:#FFF;
+	
+	background: #002F6B;
+	
+	border:none;
+	border-bottom: solid 2px #999999;
+	border-right: solid 2px #999999;
+	
+	border-radius: 0px;
+	
+	padding: 3px 6px;
+	
+	filter:none;
+	
+}
+
+.btn-ing:hover,.btn-ing:focus,.btn-ing:active,.btn-ing.active {
+	color:#FFF;
+	background-color: #002F6B;
+	background-image:none;
+	
+	border-color:#999999;
+
+}

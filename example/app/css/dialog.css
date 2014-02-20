@@ -1,0 +1,120 @@
+/* count */
+.count {
+	font-size: 20px;
+}
+
+.title {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 15px;
+}
+
+/* approve */
+.approve {
+	
+}
+
+.approve-summery {
+	height: 300px;
+	border: 1px solid gray;
+	padding: 15px;
+	margin: 0px 15px 10px;
+}
+
+.approve-summery-table {
+	width: 100%;
+}
+
+.approve-summery-table .title {
+	color: #F60;
+	height: 50px;
+}
+
+.approve-navigator {
+	margin: 0px 15px 10px;
+}
+
+.approve-navigator .nav {
+	border: none;
+}
+
+.approve-navigator .nav li {
+	width: 25%;
+	text-align: center;
+}
+
+.approve-navigator .nav li a{
+	background: none;
+	color:#000;
+	border-radius:0px;
+	
+	padding: 5px;
+	margin: 0px;
+	
+	border:none;
+	border-left: gray solid 1px;
+}
+
+.approve-navigator .nav li.last a,
+.approve-navigator .nav li.last a:hover{
+	border-right: gray solid 1px;
+}
+
+.approve-navigator .nav li a:hover{
+	border:none;
+	border-left: gray solid 1px;
+}
+
+.approve-navigator .nav li.active a{
+	background-color: #F60;
+	font-weight: bold;
+	color:#FFF;
+	border-radius:0px;
+}
+
+.approve-wizard {
+	height: 275px;
+	margin: 0px 0px 10px;
+}
+
+.approve-wizard .panel {
+	position: relative;
+	border-color: #9E9387;
+}
+
+.approve-wizard .panel .panel-heading{
+	padding: 5px;
+	color: #9E9387;
+	background-color: #9E9387;
+}
+
+
+.approve-wizard .col-xs-6,.approve-wizard .panel {
+	height: 100%;
+}
+
+.approve-wizard .approve-wizard-bar {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+.approve-bar{
+	margin: 0px 15px 10px;
+}
+
+.table-list {
+	
+}
+
+.table-list thead tr {
+	background-color: #ECECEC;
+}
+
+.table-list>thead>tr>th {
+	border: none;
+}
+
+.table-list tbody tr td,.table-list thead tr th {
+	padding: 4px;
+}
