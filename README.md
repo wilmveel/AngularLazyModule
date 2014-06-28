@@ -51,6 +51,16 @@ Modules will be made availible by a small configuration file in the base directo
 }
 ````
 
+Run
+---
+You can run the project with nodejs with the following commands.
+
+````
+npm i
+grunt
+
+````
+
 Contact
 -----------
 willem.veelenturf@gmail.com
