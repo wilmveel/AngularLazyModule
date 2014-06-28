@@ -20,7 +20,7 @@ angular.module('lazyModuleLoader', [])
 	
 	this.setBasePath = function(path){
 		config.basePath = path;
-	}
+	};
  	
 	this.loadModule = function(moduleName){
 
@@ -47,7 +47,7 @@ angular.module('lazyModuleLoader', [])
 								.when( $location.path() + '/index', {
 									templateUrl: config.basePath + "/" + moduleName + "/" + descriptor.templateUrl,
 									controller: descriptor.controller
-								})
+								});
 								
 								
 								// Load the module
@@ -59,50 +59,58 @@ angular.module('lazyModuleLoader', [])
 												
 									module.config = function(func){
 										console.log("Load configuration", func);
-										func(routeProvider);
-									}
+
+										tempRouteProvider = {
+											when : function(path, route){
+									 			console.log("path", path);
+									 			console.log("route", route);
+									 			route.templateUrl = config.basePath + "/" + moduleName + "/" + route.templateUrl;
+									 			routeProvider.when(path, route);
+											}
+										};
+										func(tempRouteProvider);
+									};
 									
 												
 									module.controller = function(name, func){
 										console.log("Register controller", name, func);
 										controller(name, func);
-									}
+									};
 									
 									module.directive = function(name, func){
 										console.log("Register directive", name, func);
 										directive(name, func);
-									}
+									};
 									
 									module.filter = function(name, func){
 										console.log("Register filter", name, func);
 										filter(name, func);
-									}
+									};
 									
 									module.factory = function(name, func){
 										console.log("Register factory", name, func);
 										factory(name, func);
-									}
+									};
 												
 									module.service = function(name, func){
 										console.log("Register service", name, func);
 										service(name, func);
-									}
+									};
 									
 									// build urls
 									var files = [];
-									for (i in descriptor.files){
-										files.push(config.basePath + "/" + moduleName + "/" + descriptor.files[i])
+									for (var i in descriptor.files){
+										files.push(config.basePath + "/" + moduleName + "/" + descriptor.files[i]);
 									}
 									
-									$script(files, function()
-									{
+									$script(files, function(){
 										// all dependencies have now been loaded by so resolve the promise
 										$rootScope.$apply(function()
 										{
 											deferred.resolve();
 											$location.path($location.path() + '/index');
 										});
-									})
+									});
 								});
 							}).error(function(){
 								console.error("Cannot load module descriptor");
@@ -115,8 +123,8 @@ angular.module('lazyModuleLoader', [])
 						}
 					}
 				}
-			}
-		}
+			};
+		};
 		
 		function containsModule (obj) {
 			var i = loaded .length;
